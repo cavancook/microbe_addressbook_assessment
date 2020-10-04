@@ -1,34 +1,61 @@
-# **Microbe Address Book Assessment**
-### **Objective:**
-To engineer/build the backend for a theoretical company contact directory while utilizing technologies in Microbe Formula’s new backend tech stack.  These technologies include but are not limited to Node.js, Express.js, GraphQL and MySQL.
-### **Overview:**
-You will be building the backend for a simple address book.  Feel free to use the boilerplate code found in this repo or start your own from scratch.
-This repo has some basic packages installed for GQL and Express, see `package.json` for dependencies. 
+# Microbe Address Book Assessment
 
-You will be required to use Node, Express and GraphQL in this project. Feel free to take your pick and use any relational database (SQL preferred) you feel comfortable with keeping in mind we use MySQL. Also feel free to use any additional npm libraries, frameworks or open source projects that will help you accomplish your goal.
+* Author: CavanCook
+* Completion Date: Oct 5 2020
 
-You will not need to create any frontend forms or components that users will interact with. Instead you will use GraphiQL to showcase the api and schema you have created.
+## Overview
 
-The company contact directory will be simple and will require all CRUD actions on the contacts.  In addition contacts will need the following properties;
+    To build the backend for a simple address book using Node.js, Express.js, GraphQL and MySQL. To showcase the api and schema GraphiQL is used.
 
-1.  Name
-2.  Role at Microbe Formulas
-3.  Email
-4.  Phone Number
+    This api and schema allow for all CRUD actions with the following properties:
+        1.  Name
+        2.  Role at Microbe Formulas
+        3.  Email
+        4.  Phone Number
 
 
-Please implement testing when you see fit, you may utilize any testing library or testing method/methods.
 
-The project does not need to be hosted (unless you would like to) but will require detailed documentation on how to get the project up and running locally.
 
-This project is not designed to be overly complex and should only take an hour or two.  We want to be respectful of your free time while adequately being able to determine your skill level and fit for the role.  We hope this project accomplishes that.  If you are the type to go above and beyond and feel like committing more time, want to tackle more difficult features, or finish up earlier than expected feel free to implement anything from the extras section.  This is not required or expected.  Feeling creative? Come up with a feature or improvement and implement it into this project.
-### **Extras:**
-In no specific order;
+## Manifest                  
+|-----------------------------------------------------------------------------|
+|index.js              | My GraphQL APi
+|package.json          | Dependency config
+|package-lock.json     | Locked in dependecies
+|*schema.js             | temperary schema file
+|README.md             | This file
+|-----------------------------------------------------------------------------|                                       
+                                                                                                  
+## Building the project     
+
+    Navigate to main folder and enter the following commands
+    $ npm start
+                                      
+                                                                                                                     
+## Testing                                                                                                           
+    I'm working on getting jest up and running some test cases.
+    to run unit tests run 
+    $ jest
+
+    I tested by launching the server and then hand loading in querys. I insure I hit all the corner cases I queried all used cases for employess, employeeById and everything worked as expected. I then proceeded to test all mutations such as createEmployee, updateEmployee, and deleteEmployee; all of which return a boolean value to let the frontend know the mutation ran with no issue.
+
+### Known Bugs
+
+    FIXED: I had a issue of the server timing out. I fixed this by adding some error handling that closes the connection before timeout then relaunches the connection to keep the connection fresh.
+
+## Reflection and Self Assessment
+
+    This project was a great deal of fun to work through.  
+    
+## Sources Used
+
+    Starter github directory given by Conor Souhrada
+
+
+### Extras to attempt
 
 1.  User authentication - Not everyone should be able to use our company directory.  Allow the creation of a user account and log in.
 2.  Host the project - Get the project live on Heroku or another service!
 3.  Create a simple user interface - Are you a ‘Full Stack Developer’? Go for it!
-4.  Be Creative - Come up with something cool!
 
 ### **Upon Completion:**
 Please turn in this project within the time frame given.  We would rather see what you have accomplished in the time frame than need extensions on the project.
