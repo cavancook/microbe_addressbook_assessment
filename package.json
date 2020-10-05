@@ -4,7 +4,8 @@
   "description": "A simple Node.js GraphQL server take home assessment",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index"
+    "start": "nodemon index",
+    "test": "jest testDb"
   },
   "author": "Cavan Cook",
   "license": "ISC",
@@ -19,6 +20,7 @@
     "mysql": "^2.18.1"
   },
   "devDependencies": {
+    "jest": "^26.4.2",
     "nodemon": "^2.0.4"
   }
 }
